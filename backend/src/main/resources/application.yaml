@@ -1,0 +1,18 @@
+spring:
+  config:
+    import: classpath:.properties
+  application:
+    name: ${NAME}
+  datasource:
+    driver-class-name: ${POSTGRES_DRIVER}
+    url: ${POSTGRES_URL}
+    username: ${POSTGRES_USERNAME}
+    password: ${POSTGRES_PASSWORD}
+  jpa:
+    properties:
+      hibernate:
+        show_sql: true
+  mvc:
+    hiddenmethod:
+      filter:
+        enabled: true
